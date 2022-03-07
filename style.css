@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Jua', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.container .section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    background-blend-mode: multiply;
+}
+
+.container .section:nth-child(1) {
+    background: rgb(88, 88, 88) url(bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(2) {
+    background: rgb(255, 255, 255) url(bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(3) {
+    background: rgb(255, 255, 255) url(bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(4) {
+    background: rgb(255, 255, 255) url(bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section .content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    max-width: auto;
+}
+
+.container .section .content h2 {
+    background: #fff;
+    color: #111;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 3em;
+}
+
+.container .section .content p {
+    background: #fff;
+    color: #111;
+    font-weight: 300;
+    padding: 10px 20px;
+    font-size: 2em;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.card {
+    position: relative;
+    width: 340px;
+    height: 200px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    height: 450px;
+}
+
+.card .imgBx {
+    position: relative;
+    max-width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .imgBx img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.card .content2 {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover .content2 {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.1s
+}
