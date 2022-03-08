@@ -1,8 +1,24 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Dongle', sans-serif;
     font-family: 'Jua', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.foot_textbox {
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    left: 10%;
+    right: 10%;
+    bottom: 30px;
 }
 
 .container {
@@ -22,28 +38,28 @@
 }
 
 .container .section:nth-child(1) {
-    background: rgb(88, 88, 88) url(bg1.jpg);
+    background: rgb(88, 88, 88) url(./img/bg1.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .container .section:nth-child(2) {
-    background: rgb(255, 255, 255) url(bg2.jpg);
+    background: rgb(255, 255, 255) url(./img/bg2.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .container .section:nth-child(3) {
-    background: rgb(255, 255, 255) url(bg3.jpg);
+    background: rgb(255, 255, 255) url(./img/bg3.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .container .section:nth-child(4) {
-    background: rgb(255, 255, 255) url(bg4.jpg);
+    background: rgb(255, 255, 255) url(./img/bg4.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -57,6 +73,7 @@
 }
 
 .container .section .content h2 {
+    font-family: 'Nanum Brush Script', cursive;
     background: #fff;
     color: #111;
     font-weight: 600;
@@ -66,14 +83,22 @@
 }
 
 .container .section .content p {
-    background: #fff;
-    color: #111;
+    font-family: 'Poor Story', cursive;
+    background: rgba(0, 0, 0, 0.363);
+    backdrop-filter: saturate(180%) blur(20px);
+    color: rgb(255, 255, 255);
     font-weight: 300;
     padding: 10px 20px;
-    font-size: 2em;
+    font-size: 1.7em;
     margin-top: 10px;
     margin-right: 50px;
     margin-bottom: 50px;
+}
+
+.container .section .content p2 {
+    color: rgb(224, 224, 224);
+    font-size: 0.8em;
+    line-height: 2;
 }
 
 .container2 {
@@ -82,13 +107,13 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 70px;
+    padding: 50px;
 }
 
 .card {
     position: relative;
     width: 340px;
-    height: 200px;
+    height: 100px;
     background: #fff;
     margin: 30px 10px;
     padding: 20px 15px;
@@ -99,15 +124,16 @@
 }
 
 .card:hover {
-    height: 450px;
+    width: 340px;
+    height: 500px;
 }
 
 .card .imgBx {
     position: relative;
-    max-width: 260px;
-    height: 260px;
+    width: 100%;
+    height: 140%;
     top: -60px;
-    left: 40px;
+    left: 0px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -133,4 +159,17 @@
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.1s
+}
+
+.icon {
+    position: absolute;
+    filter: invert();
+    top: 20px;
+    left: 20px;
+}
+
+.icon svg {
+    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
 }
