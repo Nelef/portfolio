@@ -38,7 +38,7 @@ a:visited {
 }
 
 .container .section:nth-child(1) {
-    background: rgb(88, 88, 88) url(./img/bg4.jpg);
+    background: rgb(153, 153, 153) url(./img/bg1.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -59,7 +59,7 @@ a:visited {
 }
 
 .container .section:nth-child(4) {
-    background: rgb(255, 255, 255) url(./img/bg1.jpg);
+    background: rgb(255, 255, 255) url(./img/bg4.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -113,7 +113,7 @@ a:visited {
 .card {
     position: relative;
     width: 340px;
-    height: 500px;
+    height: 100px;
     background: #fff;
     margin: 30px 10px;
     padding: 20px 15px;
@@ -149,9 +149,9 @@ a:visited {
     margin-top: -140px;
     padding: 10px 15px;
     color: #111;
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .card:hover .content2 {
