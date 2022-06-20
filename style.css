@@ -45,14 +45,16 @@ a:visited {
 }
 
 .container .section:nth-child(2) {
-    background: rgb(255, 255, 255) url(./img/bg2.jpg);
+    /* background: rgb(255, 255, 255) url(./img/bg2.jpg); */
+    background: rgb(255, 255, 255) url(./img/bg3.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .container .section:nth-child(3) {
-    background: rgb(255, 255, 255) url(./img/bg3.jpg);
+    /* background: rgb(255, 255, 255) url(./img/bg3.jpg); */
+    background: rgb(255, 255, 255) url(./img/bg4.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
