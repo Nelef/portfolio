@@ -12,34 +12,6 @@ a:visited {
     text-decoration: none;
 }
 
-.foot_textbox {
-    color: #fff;
-    font-size: 2em;
-    position: absolute;
-    text-align: center;
-    left: 10%;
-    right: 10%;
-    bottom: 20%;
-    animation-name: bubbleAni;
-    animation-duration: 3s;
-    backdrop-filter: blur(5px);
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes bubbleAni {
-    0% {
-      transform: translate(0%, 5%);
-    }
-    50% {
-      transform: translate(0%, -50%);
-    }
-    100% {
-      transform: translate(0%, 5%);
-    }
-  }
-
 .container {
     position: relative;
     width: 100%;
@@ -89,12 +61,36 @@ a:visited {
 
 .container .section .content {
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    top: 50px;
+    left: 100px;
     max-width: auto;
 }
 
-.container .section .content h2 {
+.foot_textbox {
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    animation: bubbleAni 3s infinite ease-out;
+}
+
+@keyframes bubbleAni {
+    0% {
+        transform: translate(0%, -30%);
+    }
+    50% {
+        transform: translate(0%, -100%);
+    }
+    100% {
+        transform: translate(0%, -30%);
+    }
+}
+
+.title h2 {
     font-family: 'Nanum Brush Script', cursive;
     background: #fff;
     color: #111;
@@ -104,7 +100,7 @@ a:visited {
     font-size: 3em;
 }
 
-.container .section .content p {
+.title p {
     font-family: 'Poor Story', cursive;
     background: rgba(0, 0, 0, 0.363);
     backdrop-filter: saturate(180%) blur(20px);
@@ -129,7 +125,8 @@ a:visited {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    margin-right: 50px;
+    /* padding: 50px; */
 }
 
 .card {
