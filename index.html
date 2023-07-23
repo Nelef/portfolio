@@ -86,7 +86,11 @@
                 </div>
 
                 <div class="container2">
-                    <div class="card">
+                    <button class="btn-gradient" onclick="toggleOldProject()">대학교 프로젝트 보이기/숨기기</button>
+                </div>
+
+                <div class="container2">
+                    <div class="card oldProjectElement oldProject">
                         <div class="imgBx">
                             <img src="./img/img_2_1.webp">
                         </div>
@@ -103,7 +107,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card oldProjectElement oldProject">
                         <div class="imgBx">
                             <img src="./img/img_2_2.webp">
                         </div>
@@ -120,7 +124,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card oldProjectElement oldProject">
                         <div class="imgBx">
                             <img src="./img/img_2_3.gif">
                         </div>
@@ -137,7 +141,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card oldProjectElement oldProject">
                         <div class="imgBx">
                             <img src="./img/img_2_4.webp">
                         </div>
@@ -153,6 +157,8 @@
                             </p>
                         </div>
                     </div>
+
+
 
                     <div class="card">
                         <div class="imgBx">
@@ -259,6 +265,13 @@
             function zoomOut() {
                 zoomLevel -= 10; // 확대 비율을 10씩 증가시킴
                 document.body.style.zoom = zoomLevel + "%";
+            }
+
+            function toggleOldProject() {
+                var elements = document.getElementsByClassName("oldProjectElement");
+                Array.from(elements).forEach(function(element) {
+                    element.classList.toggle("oldProject");
+                });
             }
         </script>
     </div>
