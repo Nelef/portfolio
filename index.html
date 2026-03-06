@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/icon.jpeg" type="image/jpeg">
 </head>
 <body>
     <div class="bg-overlay"></div>
@@ -19,23 +20,13 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="hero-content">
+                <img src="./img/icon.jpeg" alt="장우영 프로필" class="profile-img fade-in">
                 <h2 class="fade-in">Hello!</h2>
                 <p class="fade-in">사용자에게 편리함을 주고 싶은 개발자, <strong>장우영</strong>입니다.</p>
                 <div class="scroll-indicator">
                     <span>아래로 스크롤 해주세요!</span>
                     <div class="mouse"></div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack Section -->
-        <section id="tech">
-            <div class="section-title">
-                <h2>기술 스택</h2>
-            </div>
-            <div class="tech-tags">
-                <span>Android</span><span>iOS</span><span>React Native</span><span>Kotlin</span><span>Java</span>
-                <span>JavaScript</span><span>C#</span><span>PHP</span><span>Vue</span><span>React</span>
             </div>
         </section>
 
@@ -50,15 +41,17 @@
                 <!-- GumiPresso -->
                 <div class="glass-card project-card">
                     <div class="project-img">
-                        <img src="./img/img_2_5.gif" alt="GumiPresso">
+                        <video autoplay loop muted playsinline>
+                            <source src="./img/img_2_5.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3>GumiPresso</h3>
-                        <p class="project-desc">카페 오더 앱 (Kotlin, Spring)</p>
+                        <h3>[Kotlin, Spring] GumiPresso</h3>
+                        <p class="project-desc">카페 오더 앱<br><small>2022.05.19 ~ 2022.05.24 (2人)</small></p>
                         <ul class="role-list">
                             <li>전체 UI & 이벤트 배너 설계</li>
-                            <li>실시간 테이블 확인 및 즐겨찾기</li>
-                            <li>자체 페이, QR/지문 인식 연동</li>
+                            <li>카페 테이블 확인, 즐겨찾기, 등급별 할인</li>
+                            <li>자체 페이, QR 코드 인식, 지문 인식 기능</li>
                         </ul>
                         <a href="https://github.com/Nelef/CafeOrderApp.GumiPresso" class="btn-link">Github</a>
                     </div>
@@ -67,14 +60,16 @@
                 <!-- 너, 나 알아? -->
                 <div class="glass-card project-card">
                     <div class="project-img">
-                        <img src="./img/img_2_6.gif" alt="UKnowMe">
+                        <video autoplay loop muted playsinline>
+                            <source src="./img/img_2_6.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3>너, 나 알아?</h3>
-                        <p class="project-desc">가상 아바타 소개팅 앱 (Vue, Spring)</p>
+                        <h3>[Vue, Spring] 너, 나 알아?</h3>
+                        <p class="project-desc">가상 아바타 소개팅 앱<br><small>2022.07 ~ 2022.08 (6人)</small></p>
                         <ul class="role-list">
-                            <li>프론트엔드 팀장</li>
-                            <li>3D 모델링 및 미디어파이프 카메라 인식</li>
+                            <li>프론트 팀장, 중간발표, 시연발표</li>
+                            <li>메인페이지, 3d, 카메라 인식(Google MediaPipe)</li>
                         </ul>
                         <a href="https://github.com/Nelef/UKnowMe" class="btn-link">Github</a>
                     </div>
@@ -83,14 +78,16 @@
                 <!-- IBKS ODS -->
                 <div class="glass-card project-card">
                     <div class="project-img">
-                        <img src="./img/img_2_7.gif" alt="IBKS ODS">
+                        <video autoplay loop muted playsinline>
+                            <source src="./img/img_2_7.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3>IBKS ODS</h3>
-                        <p class="project-desc">금융 아웃도어서비스 앱 (Compose)</p>
+                        <h3>[Android, Compose] IBKS ODS</h3>
+                        <p class="project-desc">금융 아웃도어서비스 앱<br><small>2022.09 ~ (인지소프트)</small></p>
                         <ul class="role-list">
-                            <li>안드로이드 연구개발</li>
-                            <li>녹취 모듈 및 데이터 임시저장 구현</li>
+                            <li>안드로이드 개발(녹취, 임시 저장 등)</li>
+                            <li>프로젝트 생성, 신기능 개발, 이슈 처리</li>
                         </ul>
                         <a href="http://inzisoft.com/q-service/" class="btn-link">Inzisoft</a>
                     </div>
@@ -99,14 +96,16 @@
                 <!-- Record Module -->
                 <div class="glass-card project-card">
                     <div class="project-img">
-                        <img src="./img/img_2_8.gif" alt="Record Module">
+                        <video autoplay loop muted playsinline>
+                            <source src="./img/img_2_8.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3>녹취 서비스 모듈</h3>
-                        <p class="project-desc">1인 개발 (Android, Compose)</p>
+                        <h3>[Android, Compose] 녹취 서비스 모듈</h3>
+                        <p class="project-desc">안드로이드 범용 녹취 라이브러리<br><small>2022.12 ~ 2023.07 (1人)</small></p>
                         <ul class="role-list">
-                            <li>안드로이드 범용 녹취 라이브러리</li>
-                            <li>백그라운드 처리 최적화</li>
+                            <li>1인 개발 (전체 설계 및 구현)</li>
+                            <li>백그라운드 처리 최적화 및 모듈화</li>
                         </ul>
                         <a href="https://github.com/Nelef/RecordService/" class="btn-link">Github</a>
                     </div>
@@ -125,15 +124,17 @@
                 <!-- GUI Player -->
                 <div class="glass-card project-card">
                     <div class="project-img">
-                        <img src="./img/img_2_1.webp" alt="GUI Player">
+                        <video autoplay loop muted playsinline>
+                            <source src="./img/img_2_1.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3>GUI Player</h3>
-                        <p class="project-desc">C# 플로팅 동영상 플레이어</p>
+                        <h3>[C#] GUI Player</h3>
+                        <p class="project-desc">플로팅 GUI 동영상 플레이어<br><small>2019.09 ~ 2019.12 (4人)</small></p>
                         <ul class="role-list">
-                            <li>기능 통합 및 레이아웃 작성</li>
+                            <li>기능 통합, 레이아웃 작성</li>
                             <li>반투명화, 화면회전, 미니모드 구현</li>
-                            <li>전체화면 및 플로팅 모드 개발</li>
+                            <li>전체화면 모드, 플로팅모드 개발</li>
                         </ul>
                         <a href="https://github.com/Nelef/GUI_Player" class="btn-link">Github</a>
                     </div>
@@ -142,15 +143,17 @@
                 <!-- AI Tetris -->
                 <div class="glass-card project-card">
                     <div class="project-img">
-                        <img src="./img/img_2_2.webp" alt="AI Tetris">
+                        <video autoplay loop muted playsinline>
+                            <source src="./img/img_2_2.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3>AI Tetris</h3>
-                        <p class="project-desc">유전 알고리즘 기반 AI 테트리스</p>
+                        <h3>[C#] AI Tetris</h3>
+                        <p class="project-desc">유전 알고리즘 기반 AI 테트리스<br><small>2019.09 ~ 2019.12 (2人)</small></p>
                         <ul class="role-list">
-                            <li>모듈 및 자료구조 설계</li>
+                            <li>모듈 설계, 자료구조 설계</li>
                             <li>인공지능 알고리즘 구현</li>
-                            <li>AI 발달 및 대전 기능 개발</li>
+                            <li>AI 발달, AI 대전 구현</li>
                         </ul>
                         <a href="https://github.com/Nelef/AI_Tetris-genetic_algorithm" class="btn-link">Github</a>
                     </div>
@@ -159,15 +162,17 @@
                 <!-- CPU MASTER -->
                 <div class="glass-card project-card">
                     <div class="project-img">
-                        <img src="./img/img_2_3.gif" alt="CPU MASTER">
+                        <video autoplay loop muted playsinline>
+                            <source src="./img/img_2_3.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3>CPU MASTER</h3>
-                        <p class="project-desc">PHP/DB 커뮤니티 개발</p>
+                        <h3>[PHP, DB] CPU MASTER</h3>
+                        <p class="project-desc">컴퓨터 커뮤니티 개발<br><small>2020.03 ~ 2020.06 (1人)</small></p>
                         <ul class="role-list">
-                            <li>HTML/JSON 기반 DB 호출 설계</li>
-                            <li>게시글 CRUD 및 회원 시스템 구현</li>
+                            <li>HTML, JSON 사용하여 DB 호출</li>
                             <li>UI 디자인 및 테이블 정의</li>
+                            <li>회원가입, 로그인, 게시글 CRUD 구현</li>
                         </ul>
                         <a href="https://github.com/Nelef/cpumaster" class="btn-link">Github</a>
                     </div>
@@ -176,15 +181,17 @@
                 <!-- TIMELINE -->
                 <div class="glass-card project-card">
                     <div class="project-img">
-                        <img src="./img/img_2_4.webp" alt="TIMELINE">
+                        <video autoplay loop muted playsinline>
+                            <source src="./img/img_2_4.mp4" type="video/mp4">
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3>TIMELINE</h3>
-                        <p class="project-desc">활동 기반 자동 타임라인 서비스</p>
+                        <h3>[Kotlin] TIMELINE</h3>
+                        <p class="project-desc">활동 기반 자동 타임라인 서비스<br><small>2021.03 ~ 2021.06 (5人)</small></p>
                         <ul class="role-list">
-                            <li>프로젝트 총괄 및 논문 발표</li>
-                            <li>Google Drive 연동 백업/복구</li>
-                            <li>자동 불러오기 및 간편 메모 구현</li>
+                            <li>프로젝트 총괄, 프로젝트 병합, 논문 발표</li>
+                            <li>백업 및 복구, 구글드라이브 연동</li>
+                            <li>자동 불러오기 기능, 간편답장메모입력 기능</li>
                         </ul>
                         <a href="https://github.com/Nelef/university_project" class="btn-link">Github</a>
                     </div>
@@ -199,7 +206,7 @@
             </div>
             <div class="activities-grid">
                 <div class="glass-card">
-                    <h3>🏆 Honors</h3>
+                    <h3>🏆 수상</h3>
                     <ul class="activity-list">
                         <li><strong>2022 SSAFY</strong> 공통 프로젝트 우수상 [2022.05]</li>
                         <li><strong>2021 한국정보기술학회</strong> 금상 (하계 학술대회) [2021.11]</li>
@@ -207,7 +214,7 @@
                     </ul>
                 </div>
                 <div class="glass-card">
-                    <h3>💼 Experience</h3>
+                    <h3>💼 활동</h3>
                     <ul class="activity-list">
                         <li><strong>(주)인지소프트</strong> 연구팀 연구개발 [2022.09 ~ 현재]</li>
                         <li><strong>SSAFY</strong> 7기 구미 모바일 과정 수료 [2022.01 ~ 2022.09]</li>
@@ -229,5 +236,32 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
         </a>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            
+            const handleScroll = () => {
+                sections.forEach(section => {
+                    const title = section.querySelector('.section-title');
+                    if (!title) return;
+                    
+                    const rect = section.getBoundingClientRect();
+                    
+                    // 떨림(Flickering) 방지를 위한 Hysteresis(이력 현상) 로직 적용
+                    // 높이가 변하면서 스크롤 좌표가 미세하게 요동치는 것을 방지하기 위해
+                    // 클래스를 추가하는 기준점과 제거하는 기준점에 10px 이상의 여유(차이)를 줍니다.
+                    if (!title.classList.contains('is-pinned') && rect.top <= -100) {
+                        title.classList.add('is-pinned');
+                    } else if (title.classList.contains('is-pinned') && rect.top > -85) {
+                        title.classList.remove('is-pinned');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            handleScroll(); // 초기 상태 반영
+        });
+    </script>
 </body>
 </html>
